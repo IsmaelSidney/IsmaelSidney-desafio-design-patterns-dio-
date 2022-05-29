@@ -1,4 +1,4 @@
-package dio.designpatterns;
+package dio.designpatterns.singleton;
 
 public class SingletonEager {
     private static SingletonEager instancia =new SingletonEager();

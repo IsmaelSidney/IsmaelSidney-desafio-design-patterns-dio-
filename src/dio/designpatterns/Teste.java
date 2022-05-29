@@ -1,5 +1,9 @@
 package dio.designpatterns;
 
+import dio.designpatterns.singleton.SingletonEager;
+import dio.designpatterns.singleton.SingletonLazy;
+import dio.designpatterns.singleton.SingletonLazyHolder;
+
 public class Teste {
 
     public static void main(String[] args) {
