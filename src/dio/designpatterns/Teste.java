@@ -1,5 +1,6 @@
 package dio.designpatterns;
 
+import dio.designpatterns.facade.Facade;
 import dio.designpatterns.singleton.SingletonEager;
 import dio.designpatterns.singleton.SingletonLazy;
 import dio.designpatterns.singleton.SingletonLazyHolder;
@@ -28,17 +29,21 @@ public class Teste {
 //        System.out.println(holder);
 
         //Strategy
+//
+//        Comportamento normal = new ComportamentoNormal();
+//        Comportamento defensivo = new ComportamentoDefensivo();
+//        Comportamento agressivo = new ComportamentoAgressivo();
+//
+//        Robo robo = new Robo();
+//        robo.setComportamento(normal);
+//        robo.mover();
+//        robo.setComportamento(defensivo);
+//        robo.mover();
+//        robo.setComportamento(agressivo);
+//        robo.mover();
 
-        Comportamento normal = new ComportamentoNormal();
-        Comportamento defensivo = new ComportamentoDefensivo();
-        Comportamento agressivo = new ComportamentoAgressivo();
-
-        Robo robo = new Robo();
-        robo.setComportamento(normal);
-        robo.mover();
-        robo.setComportamento(defensivo);
-        robo.mover();
-        robo.setComportamento(agressivo);
-        robo.mover();
+        //Facade
+        Facade facade = new Facade();
+        facade.migrarCliente("Ismael","60360500");
     }
 }
